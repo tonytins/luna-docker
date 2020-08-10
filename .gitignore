@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,visualstudiocode,backup
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,visualstudiocode,backup
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,backup,windows,visualstudiocode,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,backup,windows,visualstudiocode,dotenv
 
 ### Backup ###
 *.bak
@@ -7,6 +7,10 @@
 *.ori
 *.orig
 *.tmp
+
+### dotenv ###
+.env
+*.env
 
 ### Linux ###
 *~
@@ -89,4 +93,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/linux,macos,windows,visualstudiocode,backup
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,backup,windows,visualstudiocode,dotenv
