@@ -1,7 +1,7 @@
-version: '3'
+version: "3"
 
 services:
-  db:
+  cloud-db:
     image: postgres:alpine
     restart: always
     volumes:
@@ -9,7 +9,7 @@ services:
     env_file:
       - db.env
 
-  app:
+  cloud:
     image: nextcloud:apache
     restart: always
     volumes:
@@ -18,7 +18,7 @@ services:
       - db.env
       - encrypt.env
     depends_on:
-      - db
+      - cloud-db
     networks:
       - proxy-tier
       - default
